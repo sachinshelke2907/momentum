@@ -1,0 +1,17 @@
+<div class="custom-date-picker">
+    <mat-form-field>
+        <mat-label>Date Range</mat-label>
+      <input matInput
+      ngxDaterangepickerMd
+      [(ngModel)]="selected"
+      [showCustomRangeLabel]="true"
+      [alwaysShowCalendars]="true"
+      [ranges]="ranges"
+      [linkedCalendars]="true"
+      [isInvalidDate] = "isInvalidDate"
+      [showClearButton]="true"
+    
+      placeholder=" " />
+        <mat-datepicker-toggle matSuffix></mat-datepicker-toggle>
+      </mat-form-field>
+</div>
